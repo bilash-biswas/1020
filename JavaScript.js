@@ -1,0 +1,13 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+input = input.replace('\n',' ');
+var lines = input.split(' ');
+var a = parseInt(lines.shift());
+var b,c,d,e;
+b = parseInt(a / 365);
+c = a - b * 365;
+d = parseInt(c / 30);
+e = c - d * 30;
+console.log(b + " ano(s)");
+console.log(d + " mes(es)");
+console.log(e + " dia(s)");
